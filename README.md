@@ -175,6 +175,18 @@ After running evaluations, compare:
 4. **K values**: How many passages are optimal?
 5. **Reranking**: Does reranking help?
 
+### Sample SQuAD Results (Flan-T5-Large)
+
+Using `results/squad_t5_results.csv` (SQuAD v1.1 dev, k=20 passages, no reranker):
+
+| Setting | Retriever                  | EM (%) | F1 (%) | Recall@20 (%) | Avg Latency (s) |
+|--------|----------------------------|--------|--------|---------------|-----------------|
+| faiss  | Dense (FAISS)              | 2.3    | 7.7    | 24.2          | 0.61            |
+| hybrid | Hybrid (BM25 + Dense)      | 1.8    | 6.4    | 19.1          | 0.56            |
+| hybrid (1 epoch tuned) | Hybrid (BM25 + Dense) | 4.0    | 6.4    | 12.3          | 0.30            |
+
+These preliminary numbers illustrate how dense and hybrid retrieval trade off EM/F1, recall, and latency; you can plug in your own runs by updating the CSVs in `results/`.
+
 ## Troubleshooting
 
 **Out of Memory**:
