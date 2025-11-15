@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (too large for git)
+data/raw/
+data/processed/
+data/indexes/
+*.pkl
+*.faiss
+*.json.gz
+
+# Model checkpoints (too large for git)
+checkpoints/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# NLTK data (can be downloaded)
+nltk_data/
+
+# Results (keep CSV, exclude large JSON)
+results/*.json
+
+# Environment
+.env
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

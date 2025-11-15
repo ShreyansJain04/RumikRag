@@ -1,0 +1,6 @@
+setting,model_type,retriever,top_k,reranker,exact_match,f1,recall_at_20,avg_latency
+faiss,t5,faiss,20,False,0.0225,0.07682997993369196,0.2415,0.6060284351110459
+hybrid,t5,hybrid,20,False,0.0175,0.06417643113245716,0.1905,0.5635295420885086
+
+//after tuning for 1 epoch
+hybrid,t5,hybrid,20,False,0.0395,0.06417643113245716,0.1225,0.301
