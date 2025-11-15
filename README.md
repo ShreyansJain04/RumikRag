@@ -204,9 +204,6 @@ These preliminary numbers illustrate how dense and hybrid retrieval trade off EM
 - Check `data/raw/` directory for downloaded files
 
 ## Future Improvements
-
-- [ ] FiD-style independent passage encoding for T5
 - [ ] Trainable retriever (end-to-end fine-tuning)
-- [ ] Multi-hop retrieval
-- [ ] Passage filtering/ranking based on answerability
+
 
